@@ -2,24 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css".css">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="./img/spotify - black.png">
+    <title>Spotify Login</title>
 </head>
 <body>
-    <h1>Entrar no Spotify</h1>
-    <div id="frlogin">
-        <div class="meio">
-            <div class="icon"><img src="icons/google.png" alt=""></div>
-        </div>
-        <div class="meio">
-            <div class="icon"><img src="icons/facebook.png" alt=""></div>
-        </div>
-        <div class="meio">
-            <div class="icon"><img src="icons/apple.png" alt=""></div>
-        </div>
-        <div class="meio">
-            <div class="icon"><img src="icons/spotify.png" alt=""></div>
+    <div id="login">
+        <img src="img/spotify.ico" alt="Spotify Logo" class="main-logo">
+        <h2 class="main-logo2">Entrar no Spotify</h2>
+        <div id="frlogin">
+            <div class="meio">
+                <div class="icon"><img src="icons/google.ico" alt="Google Icon"></div>
+                <p>Continuar com o Google</p></a>
+            </div>
+            <div class="meio">
+                <div class="icon"><img src="icons/facebook.ico" alt="Facebook Icon"></div>
+                <p>Continuar com o Facebook</p>
+            </div>
+            <div class="meio">
+                <div class="icon"><img src="icons/apple.ico" alt="Apple Icon"></div>
+                <p>Continuar com a Apple</p>
+            </div>
+            <div class="meio">
+                <p>Continuar com um número de telefone</p>
+            </div>
+            <hr>
+            <form action="">
+                <div class="form-group">
+                    <label for="email-username">E-mail ou nome de usuário:</label>
+                    <input type="text" id="email-username" name="email-username" required>
+                </div>
+                <div class="form-group password-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </div>
 </body>
