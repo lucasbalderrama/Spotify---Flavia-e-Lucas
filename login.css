@@ -143,7 +143,6 @@ input[type="checkbox"] {
     position: relative;
     margin-right: 280px;
     background-color: rgb(90, 89, 89);
-    border: rgb(90, 89, 89);
 }
 
 input:checked[type="checkbox"] {
@@ -153,8 +152,8 @@ input:checked[type="checkbox"] {
 
 input[type="checkbox"]:before {
     content: '';
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     border-radius: 100px;
     position: absolute;
     background-color: black;
@@ -176,6 +175,14 @@ input:checked[type="checkbox"]:before {
 #toggle {
     display: flex;
     align-items: center;
+}
+
+#tog {
+    border: solid rgb(90, 89, 89) 2px;
+}
+
+#tog:hover {
+    border: solid white 2px;
 }
 
 #toggle label {
