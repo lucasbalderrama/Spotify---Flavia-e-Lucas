@@ -1,109 +1,106 @@
-<!-- Flávia Glenda  e Lucas Randal -->
+<!-- Flávia Glenda e Lucas Ranal -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Artista Spotify</title>
+    <title>Spotify</title>
     <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!DOCTYPE html>
-    <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Spotify</title>
-        <link rel="stylesheet" href="biblioteca.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    </head>
-    <body>
-        <div class="sidebar">
-            <div class="sidebar-nav">
-                <div class="logo">
-                  <img src="img/logo spotify biblioteca.png" alt="Spotify">
-                </div>
-                <ul>
-                    <li> <a href="">
-                        <i class="bi bi-house-door"></i>
-                            <span>Ínicio</span>
-                    </a></li>
-                    <li> <a href="">
-                        <i class="bi bi-search"></i>
+    <div class="sidebar">
+        <div class="sidebar-nav">
+            <div class="logo">
+                <img src="img/logo spotify biblioteca.png" alt="Spotify">
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/homeeee.png" alt="Ínicio">
+                        <span>Ínicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/buscar.png" alt="Buscar">
                         <span>Buscar</span>
-                </a></li>
-                </ul>
-            </div>
-            <div class="sidebar-nav box2">
-                
-                <ul>
-                    <li><a href="">
-                        <i class="bi bi-collection"></i>
-                        <span class="library"> Biblioteca</span>
-                    </a></li>
-                    <li>
-                        <div class="sidebar-scroll">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sidebar-nav box2">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="img/biblioteca.png" alt="Biblioteca">
+                        <span class="library">Biblioteca</span>
+                    </a>
+                </li>
+                <li>
+                    <div class="sidebar-scroll">
                         <div class="playlist">
-                            <h4>
-                                Crie sua primeira playlist
-                            </h4>
-                            <p>É facíl, vamos te ajudar</p>
-                            <button>Criar Playlist</button>
+                            <h4>Crie sua primeira playlist</h4>
+                            <p>É fácil, vamos te ajudar</p>
+                            <button class="btn-brasil">Criar Playlist</button>
                         </div>
-                        
-                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="playlist">
+                        <h4>Que tal seguir um podcast novo?</h4>
+                        <p>Avisaremos você sobre novos episódios</p>
+                        <button>Explore podcast</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="privacidade">
+                <ul>
+                    <li>
+                        <a href="#">Legal</a>
+                        <a href="#">Segurança e Centro de privacidade</a>
                     </li>
                     <li>
-                      
-                            <div class="playlist">
-                                <h4>
-                                   Que tal seguir um podcast novo?
-                                </h4>
-                                <p>Avisaremos você sobre novos episódios</p>
-                                <button>Explore podcast</button>
-                                
-                            </div>
-                      
+                        <a href="#">Acessibilidade</a>
                     </li>
-            
+                    <li>
+                        <a href="#">Cookies</a>
+                    </li>
+                    <li>
+                        <a href="#">Política da privacidade</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">Sobre anúncios</a>
+                        <span class="flag-icon">
+                            <img src="img/portugues.png" alt="Português do Brasil">
+                        </span>
+                        <button class="brasilportugues">Português do Brasil</button>
+                    </li>
                 </ul>
-                <div class="privacidade">
-                    <ul>
-                        <li>
-                            <a href="">Legal</a>
-                            <a href="">Segurança e Centro de privacidade</a>
-                          
-                        </li>
-                        <li>
-                            <a href="">Política da privacidade</a>
-                            <a href="">Cookies</a>
-                            <a href="">Sobre anúncios</a>
-                        </li>
-                        <li>
-                            <a href="">Acessibilidade</a>
-                        </li>
-                        <li>
-                            <a href="">Cookies</a>
-                        </li>
-                    </ul>
-            
             </div>
         </div>
+    </div>
+
+    <div class="main-content-player">
+        <div class="top-bar-player">
+            <div class="prev-next-buttons">
+                <button type="button" class="fa fas fa-chevron-left"></button>
+                <button type="button" class="fa fas fa-chevron-right"></button>
+            </div>
+
+            <div class="navbar">
+                <ul>
+                    <li class="divider"></li>
+                    <li><a href="#">Inscrever-se</a></li>
+                </ul>
+                <a href="../HTML/login.html"><button type="button">Entrar</button></a>
+            </div>
         </div>
-    </header>
-    <main>
-        <section class="artist-header">
-            <div class="artist-info">
-                <h1>Daniel Caesar</h1>
-                <p> 27.773.214 ouvintes mensais</p>
+
+        <div class="main">
+            <div class="player">
+                <iframe style="border-radius: 12px;" src="https://open.spotify.com/embed/artist/20wkVLutqVOYrc0kxFs7rA?utm_source=generator" width="100%" height="900" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
-            <div class="artist-image">
-                <img src="./img/" alt="Daniel Caesar">
-            </div>
-        </section>
-        <section class="spotify-player">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/20wkVLutqVOYrc0kxFs7rA?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </section>
-    </main>
+        </div>
+    </div>
 </body>
 </html>
